@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alia - Tu Asistente IA Personal</title>
+    <meta name="description" content="Alia es tu asistente de inteligencia artificial personal para Android. Chatea, analiza imágenes y obtén respuestas inteligentes al instante.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Partículas de fondo -->
+    <div class="particles-bg" id="particles"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <span>Alia</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#capturas">Capturas</a></li>
+                    <li><a href="#descargar">Descargar</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-sparkles"></i>
+                    <span>Inteligencia Artificial Avanzada</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-main">Alia</span>
+                    <span class="title-sub">Tu Asistente IA Personal</span>
+                </h1>
+                <p class="hero-description">
+                    Experimenta conversaciones naturales con IA, análisis inteligente de imágenes 
+                    y procesamiento de documentos. Todo en una aplicación elegante para Android.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="25000">0</div>
+                        <div class="stat-label">Usuarios Activos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="500000">0</div>
+                        <div class="stat-label">Conversaciones</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="98">0</div>
+                        <div class="stat-label">% Satisfacción</div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#descargar" class="btn btn-primary">
+                        <i class="fab fa-android"></i>
+                        <span>Descargar para Android</span>
+                    </a>
+                    <a href="#capturas" class="btn btn-secondary">
+                        <i class="fas fa-images"></i>
+                        <span>Ver Capturas</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-container">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="chat-demo">
+                                <div class="chat-header">
+                                    <div class="chat-avatar">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <span>Alia</span>
+                                </div>
+                                <div class="chat-messages">
+                                    <div class="message user">
+                                        <div class="message-bubble">¡Hola Alia! ¿Cómo estás?</div>
+                                    </div>
+                                    <div class="message ai">
+                                        <div class="message-bubble">¡Hola! Estoy aquí para ayudarte. ¿En qué puedo asistirte hoy?</div>
+                                    </div>
+                                    <div class="message user">
+                                        <div class="message-bubble">Analiza esta imagen por favor</div>
+                                    </div>
+                                    <div class="message ai typing">
+                                        <div class="message-bubble">
+                                            <div class="typing-indicator">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section id="caracteristicas" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Características Principales</h2>
+                <p>Descubre todo lo que Alia puede hacer por ti</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Chat Inteligente</h3>
+                    <p>Conversa naturalmente con Alia. Obtén respuestas precisas y contextualmente relevantes para cualquier pregunta o tema.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Análisis de Imágenes</h3>
+                    <p>Sube fotos y obtén análisis detallados. Alia puede describir, identificar objetos y responder preguntas sobre tus imágenes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Procesamiento de Documentos</h3>
+                    <p>Analiza documentos PDF, imágenes de texto y archivos. Extrae información y obtén resúmenes inteligentes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Reconocimiento de Voz</h3>
+                    <p>Habla con Alia usando tu voz. Reconocimiento preciso de voz para una experiencia más natural y fluida.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>Historial Inteligente</h3>
+                    <p>Accede a todas tus conversaciones anteriores. Busca y encuentra información importante de chats pasados.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Personalización</h3>
+                    <p>Personaliza la interfaz con temas, colores y fuentes. Haz que Alia se adapte a tu estilo personal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capturas de Pantalla -->
+    <section id="capturas" class="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <h2>Interfaz Elegante</h2>
+                <p>Explora la interfaz intuitiva y moderna de Alia</p>
+            </div>
+            <div class="screenshots-grid">
+                <div class="screenshot-item">
+                    <div class="screenshot-placeholder">
+                        <i class="fas fa-comments"></i>
+                        <span>Chat Principal</span>
+                        <p>Interfaz de chat limpia y moderna</p>
+                    </div>
+                </div>
+                <div class="screenshot-item">
+                    <div class="screenshot-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Análisis de Imagen</span>
+                        <p>Análisis inteligente de imágenes</p>
+                    </div>
+                </div>
+                <div class="screenshot-item">
+                    <div class="screenshot-placeholder">
+                        <i class="fas fa-cog"></i>
+                        <span>Configuración</span>
+                        <p>Personalización completa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Descarga -->
+    <section id="descargar" class="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-info">
+                    <h2>Descarga Alia</h2>
+                    <p>Únete a miles de usuarios que ya disfrutan de Alia</p>
+                    <div class="version-info">
+                        <div class="version-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <span class="version-title">Versión 3.0</span>
+                                <span class="version-desc">Última versión estable</span>
+                            </div>
+                        </div>
+                        <div class="version-item">
+                            <i class="fab fa-android"></i>
+                            <div>
+                                <span class="version-title">Android 6.0+</span>
+                                <span class="version-desc">Compatible con la mayoría de dispositivos</span>
+                            </div>
+                        </div>
+                        <div class="version-item">
+                            <i class="fas fa-download"></i>
+                            <div>
+                                <span class="version-title">Descarga Gratuita</span>
+                                <span class="version-desc">Sin costos ocultos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-buttons">
+                        <button class="btn btn-download" id="downloadBtn">
+                            <i class="fab fa-android"></i>
+                            <span>Descargar APK</span>
+                        </button>
+                        <a href="#contacto" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contactar Soporte</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="download-visual">
+                    <div class="qr-container">
+                        <div class="qr-code">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <p>Escanea para descargar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contacto y Soporte</h2>
+                <p>¿Tienes preguntas? Estamos aquí para ayudarte</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email de Soporte</h3>
+                    <p>soporte.alia.ia@gmail.com</p>
+                    <span class="contact-note">Respuesta en 24 horas</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Desarrollador</h3>
+                    <p>Diego Ortiz (KeyMastered)</p>
+                    <span class="contact-note">Creador de Alia</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Centro de Ayuda</h3>
+                    <p>Preguntas frecuentes y guías</p>
+                    <span class="contact-note">Disponible 24/7</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-robot"></i>
+                        <span>Alia</span>
+                    </div>
+                    <p>Tu asistente de inteligencia artificial personal para Android</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Producto</h4>
+                        <ul>
+                            <li><a href="#caracteristicas">Características</a></li>
+                            <li><a href="#capturas">Capturas</a></li>
+                            <li><a href="#descargar">Descargar</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Soporte</h4>
+                        <ul>
+                            <li><a href="#contacto">Contacto</a></li>
+                            <li><a href="#">Ayuda</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacidad</a></li>
+                            <li><a href="#">Términos</a></li>
+                            <li><a href="#">Licencia</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Alia. Desarrollado por Diego Ortiz (KeyMastered).</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
